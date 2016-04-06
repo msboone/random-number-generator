@@ -1,0 +1,38 @@
+{
+  "name": "random-number-generator",
+  "authors": [
+    "Anonymous <anonymous@example.com>"
+  ],
+  "description": "An element providing a solution to no problem in particular.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "seed"
+  ],
+  "main": "random-number-generator.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/<USERNAME>/random-number-generator/",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "_release": "2e3ca33f61",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2e3ca33f612a2ff3e8f283a3a7f0b06a656fec7a"
+  },
+  "_source": "git://github.com/msboone/random-number-generator.git",
+  "_target": "master",
+  "_originalSource": "msboone/random-number-generator",
+  "_direct": true
+}
