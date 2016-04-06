@@ -9,9 +9,11 @@ property from Javascript.
 
 ## Usage Example
 ```
-<random-number-generator unique start="1" end="10" numberofresults="4"
-results="{{numbers}"></random-number-generator>
+<random-number-generator unique start="1" end="10" numberofresults="4" results="{{numbers}"></random-number-generator>
 ```
 
-This will generate 4 random, unique integers and store them in the results
+This will generate 4 random, unique integers between 1 and 10 and store them in the results
 property of the element.
+
+## API and Demo
+[A demo and api is available.](http://msboone.github.io/random-number-generator)
