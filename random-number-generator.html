@@ -19,6 +19,11 @@ Example:
 </dom-module>
 
 <script>
+(function() {
+
+  function generateInteger(start,end) {
+      return Math.floor(Math.random() * (end - start + 1) + start);
+  }
 
   Polymer({
 
@@ -35,12 +40,12 @@ Example:
             notify: true
         }
     },
-    
+
     generate: function() {
         if(this.unique) {
           this.results = [];
           while(this.results.length < this.numberofresults){
-            var randomnumber=Math.floor(Math.random() * (this.end - this.start + 1) + this.start);
+            var randomnumber = generateInteger(this.start,this.end);
             var found=false;
             for(var i=0;i<this.results.length;i++){
               if(this.results[i]==randomnumber){
@@ -53,7 +58,7 @@ Example:
           }
         }else {
             for(var i=0;i<this.numberofresults;++i) {
-               this.push('results',Math.floor(Math.random() * (this.end - this.start + 1) + this.start));
+               this.push('results',generateInteger(this.start,this.end));
             }
         }
     },
@@ -62,4 +67,5 @@ Example:
         this.generate();
     }
   });
+})();
 </script>
