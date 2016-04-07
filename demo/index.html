@@ -18,13 +18,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </head>
   <body>
 
-  <p>An example of <code>&lt;random-number-generator&gt;</code> creating 5 unique, random integers between 1 and 200:</p>
+  <p>An example of <code>&lt;random-number-generator&gt;</code> creating 5 unique, random integers between 1 and 200.</p>
+  <p>Click the 'Generate' button below to create new integers.</p>
   <template is="dom-bind">
     <random-number-generator unique start="1" end="200" numberofresults="5" results="{{numbers}}"></random-number-generator>
-
+    <button>Generate</button>
     <template is="dom-repeat" items="{{numbers}}">
       <div>Random number: {{item}}</div>
     </template>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+          document.querySelector('random-number-generator').generate();
+        });
+    </script>
   </template>
 
   </body>
