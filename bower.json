@@ -2,18 +2,17 @@
   "name": "random-number-generator",
   "version": "0.0.4",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+    "Shane Boone <shane.boone@gmail.com>"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "description": "An element that generates one or more pseudo-random integers within a specified range.",
   "keywords": [
     "web-component",
     "web-components",
-    "polymer",
-    "seed"
+    "polymer"
   ],
   "main": "random-number-generator.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/random-number-generator/",
+  "license": "MIT",
+  "homepage": "https://github.com/msboone/random-number-generator/",
   "ignore": [
     "/.*",
     "/test/",
